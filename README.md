@@ -20,7 +20,7 @@ The project also contains a very basic `CMakeLists.txt` file, so it should be po
 Once compiled, you should have a `wordcounter.exe` executable (or another type of executable) created.
 
 To count words in `text.txt`, you can issue
-`wordcounter -s text.txt` which will start wordcount in single-thread and then create a `singlethread_result.txt` file containing each word and its occurences within the `text.txt`. Final line in the result also displays sum of all words in the wordcounted file.
+`wordcounter -s text.txt` which will start wordcount in single-thread and then create a `singlethread_result.txt` file containing each word and its occurrences within the `text.txt`. Final line in the result also displays sum of all words in the wordcounted file.
 
 #### Arguments/Options
 `-h | -help | --help` prints usage/help information.
@@ -50,6 +50,9 @@ Application process is terminated either after successful wordcount / usage prin
 
 2. **Two words are actually one:**
 - Based on previously mentioned special characters, if there is an English word that uses `'` such as `We'll` it will be counted as one word, even though it is technically two: `We will`.
+
+3. **Program distinguishes between capitalization**
+- Program will print one word as two (or more) if there is a different capitalization to at least one character in the word. For example `Hello` is not identical with `hello` and the number of occurrences will be separate for each.
 
 #### Correctness
 Based on comparison of results between this wordcount application and one of the other publicly available web services to count words it was concluded the application works correctly as the number of total words as well as the number of most frequent words were identical.
