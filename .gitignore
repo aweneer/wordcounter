@@ -1,0 +1,10 @@
+# Visual Studio 2019 directory
+.vs/
+
+# Build folders
+debug/
+release/
+x64/
+
+# User-sepcific propreties
+wordcounter.vcxproj.user
