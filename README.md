@@ -23,8 +23,8 @@ To count words in `text.txt`, you can issue
 `wordcounter -s text.txt` which will start wordcount in single-thread and then create a `singlethread_result.txt` file containing each word and its occurrences within the `text.txt`. Final line in the result also displays sum of all words in the wordcounted file.
 
 #### Arguments/Options
-`-h | -help | --help` prints usage/help information.
-`-s | -single` for single-thread count
+`-h | -help | --help` prints usage/help information.  
+`-s | -single` for single-thread count  
 `-p | -parralel` for multi-thread count
 
 #### Usage examples
